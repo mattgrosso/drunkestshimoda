@@ -1,0 +1,168 @@
+html {
+  overflow: hidden;
+  background-image: url('/images/stars.jpg');
+}
+
+h1 {
+  text-align: right;
+}
+
+.spin-button {
+  float: right;
+}
+
+.spinner {
+  overflow: hidden;
+  pointer-events: none;
+  transition: transform 10s cubic-bezier(0, 0, 0.09, 1.03);
+  position: absolute;
+  top: -600px;
+  left: -1600px;
+}
+
+.pie {
+  position: relative;
+  margin: 1em auto;
+  border: dashed 1px;
+  padding: 0;
+  width: 2000px;
+  height: 2000px;
+  border-radius: 50%;
+  list-style: none;
+}
+
+.slice {
+  overflow: hidden;
+  position: absolute;
+  top: 0; right: 0;
+  width: 50%; height: 50%;
+  transform-origin: 0% 100%;
+}
+
+.slice-contents {
+  position: absolute;
+  left: -100%;
+  width: 200%; height: 200%;
+  border-radius: 50%;
+  background: lightblue;
+}
+
+.slice:nth-child(3n) .slice-contents {
+  background: #9352C0;
+}
+
+.slice:nth-child(3n+1) .slice-contents {
+  background: #54BBBF;
+}
+
+.slice:nth-child(3n+2) .slice-contents {
+  background: #2967BD;
+}
+
+.slice-contents {
+  transform: skewY(76deg);
+}
+
+#slice-1 {
+  transform: rotate(0deg) skewY(-76deg);
+}
+
+#slice-2 {
+  transform: rotate(14deg) skewY(-76deg);
+}
+
+#slice-3 {
+  transform: rotate(28deg) skewY(-76deg);
+}
+
+#slice-4 {
+  transform: rotate(42deg) skewY(-76deg);
+}
+
+#slice-5 {
+  transform: rotate(56deg) skewY(-76deg);
+}
+
+#slice-6 {
+  transform: rotate(70deg) skewY(-76deg);
+}
+
+#slice-7 {
+  transform: rotate(84deg) skewY(-76deg);
+}
+
+#slice-8 {
+  transform: rotate(98deg) skewY(-76deg);
+}
+
+#slice-9 {
+  transform: rotate(112deg) skewY(-76deg);
+}
+
+#slice-10 {
+  transform: rotate(126deg) skewY(-76deg);
+}
+
+#slice-11 {
+  transform: rotate(140deg) skewY(-76deg);
+}
+
+#slice-12 {
+  transform: rotate(154deg) skewY(-76deg);
+}
+
+#slice-13 {
+  transform: rotate(168deg) skewY(-76deg);
+}
+
+#slice-14 {
+  transform: rotate(182deg) skewY(-76deg);
+}
+
+#slice-15 {
+  transform: rotate(196deg) skewY(-76deg);
+}
+
+#slice-16 {
+  transform: rotate(210deg) skewY(-76deg);
+}
+
+#slice-17 {
+  transform: rotate(224deg) skewY(-76deg);
+}
+
+#slice-18 {
+  transform: rotate(238deg) skewY(-76deg);
+}
+
+#slice-19 {
+  transform: rotate(252deg) skewY(-76deg);
+}
+
+#slice-20 {
+  transform: rotate(266deg) skewY(-76deg);
+}
+
+#slice-21 {
+  transform: rotate(280deg) skewY(-76deg);
+}
+
+#slice-22 {
+  transform: rotate(294deg) skewY(-76deg);
+}
+
+#slice-23 {
+  transform: rotate(308deg) skewY(-76deg);
+}
+
+#slice-24 {
+  transform: rotate(322deg) skewY(-76deg);
+}
+
+#slice-25 {
+  transform: rotate(336deg) skewY(-76deg);
+}
+
+#slice-26 {
+  transform: rotate(350deg) skewY(-76deg);
+}
