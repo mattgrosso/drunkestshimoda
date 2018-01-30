@@ -109,7 +109,7 @@ img {
 .spinner {
   overflow: hidden;
   pointer-events: none;
-  transition: transform 10s cubic-bezier(0, 0, 0.09, 1.03);
+  transition: transform 10s cubic-bezier(0.52, -0.12, 0.09, 1.03);
   position: absolute;
   top: 80px;
   left: -950px;
