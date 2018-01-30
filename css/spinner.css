@@ -3,12 +3,77 @@ html {
   background-image: url('/images/stars.jpg');
 }
 
-h1 {
+body {
   text-align: right;
 }
 
-.spin-button {
-  float: right;
+h1 {
+  color: white;
+  font-family: 'Audiowide', cursive;
+  padding: 0 0 0 10%;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    padding: 0 0 0 40%;
+  }
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  transform: rotate(-83deg);
+  position: relative;
+  top: 560px;
+  left: 0px;
+  font-size: 1.3rem;
+  text-align: end;
+  padding: 0px 25px 0 1000px;
+}
+
+@media only screen and (min-width: 768px) {
+  h4 {
+    font-size: 1.5rem;
+    top: 690px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h4 {
+    font-size: 2rem;
+    top: 970px;
+  }
+}
+
+img {
+  position: absolute;
+  left: 128px;
+  top: 343px;
+  transform: scale(0.7) rotate(-28deg);
+  z-index: 2;
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    left: 268px;
+    top: 293px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  img {
+    left: 580px;
+    top: 343px;
+    transform: rotate(-28deg);
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  img {
+    left: 730px;
+    top: 343px;
+    transform: rotate(-28deg);
+  }
 }
 
 .spinner {
@@ -16,8 +81,28 @@ h1 {
   pointer-events: none;
   transition: transform 10s cubic-bezier(0, 0, 0.09, 1.03);
   position: absolute;
-  top: -600px;
-  left: -1600px;
+  top: 80px;
+  left: -950px;
+}
+
+@media only screen and (min-width: 768px) {
+  .spinner {
+    top: -60px;
+    left: -1060px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .spinner {
+    top: -160px;
+    left: -1300px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .spinner {
+    left: -1150px;
+  }
 }
 
 .pie {
@@ -25,10 +110,24 @@ h1 {
   margin: 1em auto;
   border: dashed 1px;
   padding: 0;
-  width: 2000px;
-  height: 2000px;
+  width: 1200px;
+  height: 1200px;
   border-radius: 50%;
   list-style: none;
+}
+
+@media only screen and (min-width: 768px) {
+ .pie {
+   width: 1450px;
+   height: 1450px;
+ }
+}
+
+@media only screen and (min-width: 1200px) {
+ .pie {
+   width: 2000px;
+   height: 2000px;
+ }
 }
 
 .slice {
@@ -44,7 +143,6 @@ h1 {
   left: -100%;
   width: 200%; height: 200%;
   border-radius: 50%;
-  background: lightblue;
 }
 
 .slice:nth-child(3n) .slice-contents {
@@ -165,4 +263,8 @@ h1 {
 
 #slice-26 {
   transform: rotate(350deg) skewY(-76deg);
+}
+
+.slice.drink-too-much .slice-contents{
+  background: red;
 }
