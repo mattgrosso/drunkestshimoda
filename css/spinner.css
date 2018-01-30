@@ -10,12 +10,18 @@ body {
 h1 {
   color: white;
   font-family: 'Audiowide', cursive;
-  padding: 0 0 0 10%;
+  padding: 0 15px 0 10%;
 }
 
 @media only screen and (min-width: 768px) {
   h1 {
-    padding: 0 0 0 40%;
+    padding: 0 15px 0 40%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 3rem;
   }
 }
 
@@ -74,6 +80,30 @@ img {
     top: 343px;
     transform: rotate(-28deg);
   }
+}
+
+.spin-button {
+  background: #3967B7;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  border: 2px solid white;
+  border-radius: 35px;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .spin-button {
+    margin: 30px 350px;
+  }
+}
+
+.spin-button:focus {
+  outline: none;
+}
+
+.clicking {
+  background: #2b5090;
 }
 
 .spinner {
@@ -266,5 +296,5 @@ img {
 }
 
 .slice.drink-too-much .slice-contents{
-  background: red;
+  background: #d06a0c;
 }
