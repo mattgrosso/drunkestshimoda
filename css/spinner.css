@@ -63,6 +63,7 @@ img {
   img {
     left: 268px;
     top: 293px;
+    transform: scale(0.7) rotate(-27deg);
   }
 }
 
