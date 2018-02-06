@@ -53,9 +53,9 @@ h4 {
 
 img {
   position: absolute;
-  left: 128px;
-  top: 343px;
-  transform: scale(0.7) rotate(-28deg);
+  left: 185px;
+  top: 465px;
+  transform: scale(0.7) rotate(-17deg);
   z-index: 2;
 }
 
